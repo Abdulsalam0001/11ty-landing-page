@@ -18,7 +18,7 @@
 
 		<!-- Signup Form -->
 			<form id="form" method="post" action="" >
-				<input type="number" name="key" id="" placeholder="Reference Number" />
+				<input type="password" name="key" id="input-field" placeholder="Reference Number" />
 			                  <button type="submit" class="ud-main-btn w-100"  onclick="check(this.form)" id="submit" >Validate reference code </button>
 
 			</form>
@@ -30,39 +30,7 @@
 			</footer>
 
 		<!-- Scripts -->
-		 <script language="javascript">
-      function check(form)/*function to check userid & password*/
-      {
-       /*the following code checkes whether the entered userid and password are matching*/
-       if(form.key.value == "7709170774" )
-        {
-          swal("Good job!", "Reference key accepted ", "success");
-
-
-        location.href = "./account/verify/index.html";
-           event.preventDefault();
-        }     
-         else if(form.key.value == "" )
-        {
-          swal("Incorrect Code", "Please provide correct code", "warning");
-
-
-           event.preventDefault();
-        }
-     
-  
-  else
-       {
-        swal("Sorry Try Again!", "Key invalid", "error");
-
-       event.preventDefault();
-         return false;
-  
-       
-        }
-    }
-  
-      </script>
+		
 			<script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
