@@ -8,11 +8,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
- <script language="javascript">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Provide a valid reference code</h1>
+				<p>Confirm you are not a robot by providing a reference <br />
+				 number and completing the verification process </p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="form" method="post" action="" >
+				<input type="number" name="key" id="" placeholder="Reference Number" />
+			                  <button type="submit" class="ud-main-btn w-100"  onclick="check(this.form)" id="submit" >Validate reference code </button>
+
+			</form>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<p>Please contact an agent for reference number</p>
+				
+			</footer>
+
+		<!-- Scripts -->
+		 <script language="javascript">
       function check(form)/*function to check userid & password*/
       {
        /*the following code checkes whether the entered userid and password are matching*/
-       if(form.key.value == "456322" )
+       if(form.key.value == "7709170774" )
         {
           swal("Good job!", "Reference key accepted ", "success");
 
@@ -41,27 +63,6 @@
     }
   
       </script>
-		<!-- Header -->
-			<header id="header">
-				<h1>Provide a valid reference code</h1>
-				<p>Confirm you are not a robot by providing a reference <br />
-				 number and completing the verification process </p>
-			</header>
-
-		<!-- Signup Form -->
-			<form id="form" method="post" action="" >
-				<input type="number" name="key" id="" placeholder="Reference Number" />
-			                  <button type="submit" class="ud-main-btn w-100"  onclick="check(this.form)" id="submit" >Validate reference code </button>
-
-			</form>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<p>Please contact an agent for reference number</p>
-				
-			</footer>
-
-		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
